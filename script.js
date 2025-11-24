@@ -44,8 +44,6 @@ function levenshteinMatrix(str1, str2) {
 function closestMatch(input, domains) {
   let bestMatch = null;
   let bestScore = Infinity;
-  console.log("BestMatch 1:" + bestMatch);
-  console.log("bestScore 1:" + bestScore);
   domains.forEach((element) => {
     const distance = levenshteinMatrix(input, element);
     if (distance < bestScore && distance <= 3) {
@@ -53,8 +51,6 @@ function closestMatch(input, domains) {
       bestMatch = element;
     }
   });
-  console.log("BestMatch 2:" + bestMatch);
-  console.log("bestScore 2:" + bestScore);
   return bestMatch;
 }
 
@@ -82,3 +78,4 @@ emailInput.addEventListener("input", () => {
     emailMessage.innerText = "";
   }
 });
+
