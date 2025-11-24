@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --white: #f2f2f2;
+  --background-gradient: linear-gradient(#4d7ea3, #5fc9aa);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-gradient);
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.input-container {
+  width: 100%;
+  border-bottom: solid var(--white) 1px;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--white);
+  padding-left: 1rem;
+}
+input::placeholder {
+  color: var(--white);
+}
+button[type="submit"] {
+  width: 100%;
+  height: 10vh;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #5fc9aa;
+}
+#email_suggestion {
+  align-self: flex-start;
+  display: none;
+  font-size: small;
+}
